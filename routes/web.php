@@ -11,18 +11,7 @@
 |
 */
 
-Route::get('/', function () {
 
-
-
-    return view('welcome')->withTasks([
-
-            'Task subject 1',
-            'Task subject 2',
-            'Task subject 3'
-
-    ]);
-});
 
 Route::get('/contact', function () {
     return view('contact');
@@ -30,3 +19,5 @@ Route::get('/contact', function () {
 Route::get('/alphavantage', function () {
     return view('alphavantage');
 });
+
+Route::get('/','PagesController@home');
