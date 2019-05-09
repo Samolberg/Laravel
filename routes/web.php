@@ -12,7 +12,16 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+
+    $tasks = [
+        'Task subject 1',
+        'Task subject 2',
+        'Task subject 3'
+    ];
+
+    return view('welcome',[
+        'tasks' => $tasks
+    ]);
 });
 
 Route::get('/contact', function () {
