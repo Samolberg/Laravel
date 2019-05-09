@@ -13,11 +13,6 @@
 
 
 
-Route::get('/contact', function () {
-    return view('contact');
-});
-Route::get('/alphavantage', function () {
-    return view('alphavantage');
-});
-
 Route::get('/','PagesController@home');
+Route::get('/contact','PagesController@contact');
+Route::get('/alphavantage','PagesController@alphavantage');

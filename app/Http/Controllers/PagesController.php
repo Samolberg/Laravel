@@ -14,4 +14,13 @@ class PagesController extends Controller
             'Task subject 3'
         ]);
     }
+    public function alphavantage()
+    {
+        return view('alphavantage');
+    }
+
+    public function contact()
+    {
+        return view('contact');
+    }
 }
