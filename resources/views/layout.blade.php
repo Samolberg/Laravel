@@ -7,15 +7,16 @@
     <title>@yield('title')</title>
 </head>
 <body>
-    @yield('content')
-    <div class="content">
-        <div class="title m-b-md">Laravel</div>
-        <p>
-            <a href="/">Home</a>
-            <a href="/contact">Contact us</a>
-            <a href="/alphavantage">API</a>
+@yield('content')
+<div class="content">
+    <div class="title m-b-md">Laravel</div>
+    <p>
+        <a href="/">Home</a>
+        <a href="/contact">Contact us</a>
+        <a href="/alphavantage">API</a>
+        @yield('apitest')
 
-        </p>
-    </div>
+    </p>
+</div>
 </body>
 </html>
