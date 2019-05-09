@@ -19,9 +19,7 @@ Route::get('/', function () {
         'Task subject 3'
     ];
 
-    return view('welcome',[
-        'tasks' => $tasks
-    ]);
+    return view('welcome')->withTasks($tasks);
 });
 
 Route::get('/contact', function () {
