@@ -11,11 +11,11 @@
 
     <ul>
 
-    <?php foreach ($tasks as $task) : ?>
+        @foreach($tasks as $task)
 
-    <li><?= $task; ?></li>
+        <li>{{ $task }}</li>
 
-    <?php endforeach; ?>
+        @endforeach
 
     </ul>
 @endsection
