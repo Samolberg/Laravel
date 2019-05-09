@@ -13,13 +13,15 @@
 
 Route::get('/', function () {
 
-    $tasks = [
-        'Task subject 1',
-        'Task subject 2',
-        'Task subject 3'
-    ];
 
-    return view('welcome')->withTasks($tasks);
+
+    return view('welcome')->withTasks([
+
+            'Task subject 1',
+            'Task subject 2',
+            'Task subject 3'
+
+    ]);
 });
 
 Route::get('/contact', function () {
