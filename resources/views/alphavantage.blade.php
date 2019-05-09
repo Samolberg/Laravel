@@ -1,5 +1,8 @@
 @extends('layout')
 
+@section('title','API test')
+
+
 @section('content')
 
     <?php
